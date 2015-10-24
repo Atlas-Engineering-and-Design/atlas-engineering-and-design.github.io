@@ -94,6 +94,7 @@ a{
 
 #header {  /* adjusts initial banner */
     background-image: url("https://lh6.googleusercontent.com/-Bfo8w2dyyPE/ViuCrmmtzdI/AAAAAAAAA7s/h-Knc88q3ms/w259-h194-no/blueprint.jpg");
+    opacity: .80;
     padding-bottom: 2em;  
 }
 
