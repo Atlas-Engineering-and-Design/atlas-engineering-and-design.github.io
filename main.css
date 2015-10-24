@@ -219,11 +219,11 @@ h1, h2, h3, h4{
 img.gear
 {
     -webkit-animation-name:             rotate; 
-    -webkit-animation-duration:         15s; 
+    -webkit-animation-duration:         20s; 
     -webkit-animation-iteration-count:  infinite;
     -webkit-animation-timing-function:  linear;
     -moz-animation-name:             rotate; 
-    -moz-animation-duration:         15s; 
+    -moz-animation-duration:         20s; 
     -moz-animation-iteration-count:  infinite;
     -moz-animation-timing-function:  linear;
 }
