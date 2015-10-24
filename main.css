@@ -210,7 +210,7 @@ h1, h2, h3, h4{
 img.gear
 {
     -webkit-animation-name:             rotate; 
-    -webkit-animation-duration:         0.5s; 
+    -webkit-animation-duration:         0.9s; 
     -webkit-animation-iteration-count:  infinite;
-    -webkit-animation-timing-function: linear;
+    -webkit-animation-timing-function:  linear;
 }
