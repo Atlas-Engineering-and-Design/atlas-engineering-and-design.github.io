@@ -236,4 +236,5 @@ img.gear
 	margin-right:auto;
 	margin-left: auto;
 	width: 95%;
+	box-sizing: border-box;
 }
