@@ -43,6 +43,10 @@ div.RCI{
 	transition:.3s  ;
 }
 
+.hidden {
+	visibility: hidden;
+}
+
 /*text boxes*/
 #wrapper .textsolidworks {
 visibility:hidden;
