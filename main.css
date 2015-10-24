@@ -1,0 +1,409 @@
+body {
+    background: grey;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI Light","Helvetica Neue","Open Sans","Segoe UI",Helvetica,Helvetica,Arial,sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    cursor: default;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body div {  
+	text-align: center;
+}
+
+table {
+	margin-top: -50px;
+	padding-bottom: 10px;
+}
+
+/* clouds on intro page */
+
+#clouds{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:120px;
+	left:0;
+	z-index: 1;
+}
+
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+.x1 {
+	-webkit-animation: moveclouds 30s linear infinite;
+	-moz-animation: moveclouds 30s linear infinite;
+	-o-animation: moveclouds 30s linear infinite;
+	opacity: .7;
+}
+
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.5; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 15s linear infinite;
+	-moz-animation: moveclouds 15s linear infinite;
+	-o-animation: moveclouds 15s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.7; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.65; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.7; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 40s linear infinite;
+	-moz-animation: moveclouds 40s linear infinite;
+	-o-animation: moveclouds 40s linear infinite;
+}
+
+@-webkit-keyframes moveclouds { /* adjusts the range of the clouds*/
+	0% {left: 1050px;}  /* starting point of clouds*/
+	100% {left: -200px;} /* ending point of clouds */
+	
+}
+@keyframes moveclouds {
+	0% {left: 1050px;}
+	100% {left: -200px;}
+	
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1050px;}
+	100% {margin-left: -200px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1050px;}
+	100% {margin-left: -200px;}
+}
+/* end of clouds */
+
+#iframe:hover .RCI{
+	opacity:1;
+}
+
+div.RCI{
+	z-index: 100;
+	margin: auto;
+	width: 750px;
+	height: auto;
+	opacity:0;
+	position:absolute;
+	content:url(https://lh6.googleusercontent.com/-wUK9dqDMgWI/Vehq7hbE4GI/AAAAAAAAAjs/tgnJovTiBjc/w860-h484-no/iso%2Bfront.jpg);
+	top:22%;
+	left:17.5%;
+	-o-transition:.3s;
+	-ms-transition:.3s;
+	-moz-transition:.3s ;
+	-webkit-transition:.3s;
+	transition:.3s  ;
+}
+
+/*text boxes*/
+#wrapper .textsolidworks {
+visibility:hidden;
+background: rgba(0,0,0,0.5);
+position: absolute;
+top: 50%;
+left: 100%;
+width:750px;
+height:auto;
+margin-top:-64px;
+margin-left:-500;
+margin-right: 500;
+-webkit-transition: width 5.25s ;
+transitions: width 5.25s;
+z-index: 100;
+text-align: left;
+}
+
+
+#wrapper .textmatlab {
+visibility:hidden;
+background: rgba(0,0,0,0.5);
+position: absolute;
+top: 50%;
+left: 100%;
+width:750px;
+height:auto;
+margin-top:-216px;
+margin-left:-500;
+margin-right: 500;
+-webkit-transition: width 0.25s ;
+transitions: width 0.25s;
+z-index: 100;
+text-align: left;
+}
+
+
+#wrapper .textprinting {
+visibility:hidden;
+background: rgba(0,0,0,0.5);
+position: absolute;
+top: 50%;
+left: 100%;
+width:750px;
+height:auto;
+margin-top:-369px;
+margin-left:-500;
+margin-right: 500;
+-webkit-transition: width 0.25s ;
+transitions: width 0.25s;
+z-index: 100;
+text-align: left;
+}
+
+
+#wrapper .textweb {
+visibility:hidden;
+background: rgba(0,0,0,0.5);
+position: absolute;
+top: 50%;
+left: 100%;
+width:750px;
+height:auto;
+margin-top:-522px;
+margin-left:-500;
+margin-right: 500;
+-webkit-transition: width 0.25s ;
+transitions: width 0.25s;
+z-index: 100;
+text-align: left;
+}
+
+
+#wrapper .textwm {
+visibility:hidden;
+background: rgba(0,0,0,0.5);
+position: absolute;
+top: 50%;
+left: 100%;
+width:750px;
+height:auto;
+margin-top:-675px;
+margin-left:-500;
+margin-right: 500;
+-webkit-transition: width 0.25s ;
+transitions: width 0.25s;
+z-index: 100;
+text-align: left;
+}
+
+
+#wrapper .textarduino {
+visibility:hidden;
+background: rgba(0,0,0,0.5);
+position: absolute;
+top: 50%;
+left: 100%;
+width:750px;
+height:auto;
+margin-top:-828px;
+margin-left:-500;
+margin-right: 500;
+-webkit-transition: width 0.25s ;
+transitions: width 0.25s;
+z-index: 100;
+text-align: left;
+}
+
+#wrapper:hover .text {
+visibility:visible;
+}
+
+
+.link{  
+ color: white;
+ text-decoration: none;
+ font-weight: bold;
+ position: relative;
+ z-index: 900;
+}
+
+/* color of link (after it has been clicked?) */
+a{
+	color: white;
+}
+
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem;
+}
+
+#header {  /* adjusts initial banner */
+    background: darkred;
+    padding-bottom: 2em;  
+}
+
+
+/* Pictures on start screen */
+/*.container {
+    float:left;
+    position: relative;
+    width: 30%;
+} */
+
+.image img {
+    width: 100%;
+    height: 4.5in;
+}
+
+.image{
+	float:left;
+	margin: 90px;
+}
+
+.imgs {
+	margin: 8px;
+	width: 125px;
+	height: 125px;
+	position:relative;
+	padding: 10px;
+	
+}
+
+.listimg {
+	display: inline-block;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin-top: -45px;
+	float: right;
+	
+}
+
+
+ul{
+	
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+
+/*Wording Throughout*/
+h1 {
+ margin-bottom: .25px;
+ margin-top: .5px;
+ font-size: 4.375em;
+}
+h2 {
+ font-size: 1.6253em;
+}
+h3 {
+ margin-bottom: .25px;
+ margin-top: .025px;
+ font-size: 3.5em;
+ color: blue;
+ text-align: center; !important
+}
+h4 {
+ margin-bottom: .25px;
+ margin-top: .05px;
+ font-size: 1em;
+}
+
+h5 {
+ margin-bottom: .25px;
+ margin-top: .05px;
+ font-size: 2.5em;
+}
+h1, h2, h3, h4{
+    font-family: "Segoe UI Light","Helvetica Neue","Open Sans","Segoe UI",Helvetica,Helvetica,Arial,sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    color: #FFF;
+    margin-top: .2rem;
+    line-height: 1.4;
+}
+
+
+/* links on home page */
+#link{  
+ color:  black;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ font-weight: bold;
+ position: relative;
+ z-index:900;
+ 
+}
+
+span.navigationSpace{
+	padding-left: 50px;
+}
+
+span.navigationSpaceEngin{
+	padding-left: 5px;
+}
