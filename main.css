@@ -176,6 +176,7 @@ h1, h2, h3, h4{
 	display: inline-block;
 }
 
+
 /* spinning gear */
 
 @-webkit-keyframes rotate {
@@ -207,6 +208,8 @@ img.gear
     -moz-animation-iteration-count:  infinite;
     -moz-animation-timing-function:  linear;
 }
+/* end spinning gear*/
+
 
 .container {
 	margin-bottom: 15px;
